@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {Colors} from '../../Config/Colors';
+import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.TouchableOpacity`
   background-color: ${Colors.primary};

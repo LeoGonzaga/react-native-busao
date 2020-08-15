@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import {Colors} from '../../Config/Colors';
-
+import {RectButton} from 'react-native-gesture-handler';
 export const Container = styled.View`
   flex: 1;
   align-items: center;
@@ -27,4 +27,17 @@ export const Title = styled.Text`
 export const SubTitle = styled.Text`
   color: ${Colors.subTitle};
   font-size: 20px;
+`;
+
+export const ContainerButton = styled(RectButton)`
+  background-color: ${Colors.primary};
+  padding: 20px;
+  width: 90%;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 60px;
+`;
+export const TitleButton = styled.Text`
+  color: ${Colors.secondary};
+  font-size: 25px;
 `;
