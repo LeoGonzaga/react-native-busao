@@ -16,7 +16,9 @@ import {useNavigation} from '@react-navigation/native';
 
 const Initial: React.FC = () => {
   const {navigate} = useNavigation();
-  const handleNavigateToFeed = () => navigate('Feed');
+  const handleNavigateToFeed = useCallback(() => {
+    navigate('Feed');
+  }, []);
 
   return (
     <Container>

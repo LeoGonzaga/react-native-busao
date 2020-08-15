@@ -28,7 +28,17 @@ const App = () => {
             component={Initial}
             options={{headerShown: false}}
           />
-          <Stack.Screen name="Feed" component={Feed} />
+          <Stack.Screen
+            name="Feed"
+            component={Feed}
+            options={{
+              title: 'Busão',
+              headerTitleAlign: 'center',
+              headerTintColor: Colors.primary,
+              headerTitleStyle: {fontWeight: 'bold', fontSize: 35},
+              headerStyle: {elevation: 0},
+            }}
+          />
           <Stack.Screen name="New" component={New} />
         </Stack.Navigator>
       </NavigationContainer>
